@@ -1,11 +1,16 @@
 var uno,dos
 
-
+var tres,cuatro,cinco,seis;
+var ob1,ob2;
 
 function setup() {
   createCanvas(800,400);
   uno=createSprite(400,200,40,20);
   dos=createSprite(400,280,60,30);
+  tres=createSprite(300,100,50,50);
+  cuatro=createSprite(500,300,60,20);
+  cinco=createSprite(300,200,20,20);
+  seis=createSprite(100,200,30,60);
   uno.shapeColor="green";
   dos.shapeColor="green";
 }
@@ -17,20 +22,17 @@ function draw() {
   console.log(uno.x - dos.x); 
   console.log(uno.x);
   console.log(dos.x);
-
-  if( dos.x - uno.x < uno.width/2 + dos.width/2 &&
-      uno.x - dos.x < uno.width/2 + dos.width/2 &&
-      dos.y- uno.y <  uno.height/2 + dos.height/2 &&
-      uno.y - dos.y < uno.height/2 + dos. height/2){
-
-    uno.shapeColor="red";
+  if(isTouching(dos,cuatro)){
+    cuatro.shapeColor="red";
     dos.shapeColor="red";
-
   }
+
   else{
-    uno.shapeColor="green";
+    cuatro.shapeColor="green";
     dos.shapeColor="green";
-
   }
+  
   drawSprites();
 }
+
+
