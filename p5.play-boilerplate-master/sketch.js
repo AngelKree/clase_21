@@ -14,7 +14,7 @@ function setup() {
   uno.shapeColor="green";
   dos.shapeColor="green";
 }
-
+// podemos intentar estar más aqui en esto
 function draw() {
   background(255,255,255);  
   dos.x=mouseX;//estamos realizando un cambio
