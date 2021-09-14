@@ -15,6 +15,8 @@ function setup() {
   dos.shapeColor="green";
 }
 // podemos intentar estar más aqui en esto
+//estamos haciendo mas pruebas
+//muchas mas pruebas
 function draw() {
   background(255,255,255);  
   dos.x=mouseX;//estamos realizando un cambio
