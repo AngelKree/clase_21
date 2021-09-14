@@ -17,7 +17,7 @@ function setup() {
 
 function draw() {
   background(255,255,255);  
-  dos.x=mouseX;
+  dos.x=mouseX;//estamos realizando un cambio
   dos.y=mouseY;
   console.log(uno.x - dos.x); 
   console.log(uno.x);
